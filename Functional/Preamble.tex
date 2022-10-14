@@ -1,9 +1,8 @@
+\input{Functional/colours}
+
 \makeatletter
   \@removefromreset{section}{chapter}
 \makeatother
-
-
-\definecolor{debatUnieBlauw}{rgb}{0.53	0.72	0.48}
 
 \geometry{a4paper,total={170mm,257mm},left=20mm,top=20mm,}
 
@@ -22,10 +21,9 @@
 }
 
 %%% command to create the custom section headers %%%
-\newcommand{\SectionTitle}[2]{\noindent \hspace{6mm} {\xhrulefill{pink}{8.0mm}}
-
- \vspace{-8mm}\noindent 
- {\hspace{8mm}\ \large{#1 #2 }}
+\newcommand{\SectionTitle}[2]{\noindent
+{\color{debatUnieDonkerBlauw} \rule{\linewidth}{8.0mm}}\vspace{-7.6mm}\noindent
+\textbf{ \color{white}\ \Large{#1 #2}}\vspace{6mm}
 }
 
 
