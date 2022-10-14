@@ -1,0 +1,10 @@
+\usepackage{enumitem}
+\usepackage{etoolbox}
+
+ % include the chapter number
+ \setlist[enumerate]{label=\thechapter.\arabic{*},resume}
+
+ % restart the enumerate list every chapter
+ \preto\chapter{%
+   \restartlist{enumerate}%
+}
