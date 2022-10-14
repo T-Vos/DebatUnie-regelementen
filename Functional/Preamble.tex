@@ -1,23 +1,20 @@
-%%% Stop the section counter from resetting when a new chapter is declared %%%
 \makeatletter
   \@removefromreset{section}{chapter}
 \makeatother
 
 
-\definecolor{debatUnieBlauw}{rgb}{0.53	0.72	0.48} % Custom red colour
+\definecolor{debatUnieBlauw}{rgb}{0.53	0.72	0.48}
 
-\geometry{a4paper,total={170mm,257mm},left=20mm,top=20mm,} % Custom margins
+\geometry{a4paper,total={170mm,257mm},left=20mm,top=20mm,}
 
-\renewcommand\contentsname{} % remove the "Chapter #" thing
+\renewcommand\contentsname{}
 
-\renewcommand{\thechapter}{\arabic{chapter}.} % Change the dot point for chapters in Table of contents
-\renewcommand{\thesection}{\arabic{section})} % Change the dot point for sections in table of contents 
+\renewcommand{\thechapter}{\arabic{chapter}.}
+\renewcommand{\thesection}{\arabic{section})}
 
-\onehalfspacing % increase the spacing between the lines to something more readable / typical of a legal document
+\onehalfspacing
+\clearpairofpagestyles
 
-\clearpairofpagestyles % Clear all existing page styles to make way for our ones
-
-%%% Lower the vertical margin so that the header doesn't feel as "squashed" %%%
 \addtolength{\topmargin}{.35in}
 \addtolength{\textheight}{-.45in}
 
